@@ -81,7 +81,7 @@ html {
         display: none;
     }
 
-    .nav,.show {
+    .nav.show {
         display: block;
     }
 
