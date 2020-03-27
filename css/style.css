@@ -1,0 +1,101 @@
+html {
+    background-color: violet;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu-button {
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    margin: 1rem;
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    /* flex: 1; */
+    text-align: center;
+    background: aqua;
+    display: inline-block;
+    width: 30vw;
+    border: solid black 2px;
+
+    font-size: 2rem;
+}
+
+#about-me {
+    height: 50vh;
+    background-color: blue;
+    flex: 0 0 auto;
+    width: 50vw;
+}
+
+#projects {
+    background-color: red;
+    /* height: 200px; */
+    height: 50vh;
+    flex: 0 0 auto;
+    width: 50vw;
+}
+
+#contact {
+    /* height: 50px; */
+    height: 50vh;
+    background-color: green;
+    flex: 0 0 auto;
+    width: 50vw;
+}
+
+/* design with mobile first */
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    #about-me {
+        /* background-color: gold; */
+        width: 100vw;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.show {
+        display: block;
+    }
+
+    .nav__link {
+        width: 100vw;
+        margin: 1rem 0;
+        /* padding: 20px; */
+    }
+
+}
+
+/* @media only screen and (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+
+} */
