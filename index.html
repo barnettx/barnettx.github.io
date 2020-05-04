@@ -13,7 +13,13 @@
 
 <body>
     <nav class="nav">
-        <i class="fas fa-bars nav__mobile"></i>
+        <div>
+            
+        </div>
+        <div class="nav__mobile">
+            <i class="fas fa-bars nav__mobile__open" onclick="openMobileNav()"></i>
+            <i class="fas fa-times nav__mobile__close" onclick="closeMobileNav()"></i>
+        </div>
         <p class="nav__left">Barnett Lee</p>
         <ul class="nav__right">
             <li class="nav__right__item">
@@ -30,22 +36,22 @@
             </li>
         </ul>
 
-        <!-- <div class="mobile__menu">
-            <ul class="">
-                <li class="">
-                    <a href="#home" class="">Home</a>
+        <div class="mobile__menu">
+            <ul>
+                <li>
+                    <a href="#home" onclick="closeMobileNav()">Home</a>
                 </li>
-                <li class="">
-                    <a href="#about" class="">About</a>
+                <li>
+                    <a href="#about" onclick="closeMobileNav()">About</a>
                 </li>
-                <li class="">
-                    <a href="#projects" class="">Projects</a>
+                <li>
+                    <a href="#projects" onclick="closeMobileNav()">Projects</a>
                 </li>
-                <li class="">
-                    <a href="#skills" class="">Skills</a>
+                <li>
+                    <a href="#skills" onclick="closeMobileNav()">Skills</a>
                 </li>
             </ul>
-        </div> -->
+        </div>
         
     </nav>
     
@@ -294,6 +300,7 @@
             </span>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 

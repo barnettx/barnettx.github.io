@@ -75,7 +75,7 @@ body {
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 4rem 0;
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -132,11 +132,6 @@ body {
 .banner__container {
     z-index: 1;
     animation: fadeIn .5s ease-out 0s 1; 
-}
-
-.banner:before {
-    /* animation: fadeIn 1s ease-in 0s 1;  */
-    
 }
 
 .banner__title {
@@ -201,7 +196,7 @@ body {
 }
 
 #projects {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 
 .project__container {
@@ -284,31 +279,34 @@ footer {
     margin-right: 1rem;
 }
 
+.mobile__menu {
+    position: fixed;
+    z-index: 10;
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    top: var(--nav-height);
+    left: 0;
+    width: 0%;
+    /* display: none; */
+    overflow: hidden;
+    transition: .5s;
+}
+
+.mobile__menu ul {
+    list-style: none;
+}
+
+.mobile__menu a {
+    text-decoration: none;
+    color: white;
+}
+
 /* mobile and tablet */
 @media (max-width: 1280px) {
 
     
 
-    .mobile__menu {
-        position: fixed;
-        z-index: 10;
-        background: rgba(0,0,0,0.8);
-        width: 100%;
-        height: 100vh;
-        top: var(--nav-height);
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
 
-    .mobile__menu ul {
-        list-style: none;
-    }
-
-    .mobile__menu a {
-        text-decoration: none;
-        color: white;
-    }
 
 
     .nav {
@@ -318,12 +316,17 @@ footer {
     }
 
     .nav__mobile {
-        display: inline;
+        display: inline-block;
         margin-right: 30px;
+        position: relative;
     }
 
     .nav__mobile:active {
         filter: brightness(80%)
+    }
+
+    .nav__mobile__close{
+        display: none;
     }
 
     .nav__right {
