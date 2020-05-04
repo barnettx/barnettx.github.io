@@ -17,7 +17,7 @@ h1,h2,h3,h4 {
 }
 
 :root {
-    --nav-height: 100px;
+    --nav-height: 5rem;
     --primary-color: #2C3E50;
     --highlight-color: #F64C72;
 }
@@ -342,9 +342,10 @@ footer {
     }
     
     .banner:before {
-        top: var(--nav-height);
+        top: calc(var(--nav-height)/2);
         background-position: 70%;
-        height: calc(100vh - var(--nav-height) - 10%)
+        height: calc(100vh - var(--nav-height)/2 - 15%);
+        /* height: calc(100vh - 10%); */
         /* background-size: 80%; */
     }
     
@@ -379,7 +380,7 @@ footer {
             rgba(40, 40, 40, 1) calc(100% * var(--gradient-ratio))
         );
         width: 100%;
-        height: 40%;
+        height: 65%;
         position: absolute;
         bottom: 0;
         z-index: -2;
@@ -416,7 +417,7 @@ footer {
 @media (max-width: 640px) {
 
     :root {
-        --nav-height: 60px;
+        --nav-height: 3.5rem;
     }
 
     /* .nav {
