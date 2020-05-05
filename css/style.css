@@ -316,10 +316,8 @@ footer {
     }
 }
 
-/* mobile and tablet */
-@media (max-width: 992px) {
-
-    
+/* mobile and tablet portrait */
+@media (max-width: 992px) and (orientation: portrait){
 
 
 
@@ -360,7 +358,7 @@ footer {
     .banner:before {
         top: calc(var(--nav-height)/2);
         background-position: 70%;
-        height: calc(100vh - var(--nav-height)/2 - 15%);
+        height: calc(100vh - var(--nav-height)/2 - 20%);
         /* height: calc(100vh - 10%); */
         /* background-size: 80%; */
     }
@@ -378,7 +376,7 @@ footer {
     } */
 
     .banner:after {
-        --gradient-ratio: 3/4;
+        --gradient-ratio: 1/2;
         content: '';
         background: linear-gradient(
             rgba(40, 40, 40, 0) 0%,
@@ -396,7 +394,7 @@ footer {
             rgba(40, 40, 40, 1) calc(100% * var(--gradient-ratio))
         );
         width: 100%;
-        height: 65%;
+        height: 40%;
         position: absolute;
         bottom: 0;
         z-index: -2;
@@ -448,10 +446,36 @@ footer {
 
 }
 
-/* mobile landscape */
+
+/* mobile and tablet landscape */
 @media (max-width: 992px) and (orientation: landscape){
     :root {
         --nav-height: 3.5rem;
+    }
+
+    .nav {
+        justify-content: flex-start;
+        padding: .5rem 30px;
+
+    }
+
+    .nav__mobile {
+        display: inline-block;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    .nav__mobile:active {
+        filter: brightness(80%)
+    }
+
+    .nav__mobile__close{
+        display: none;
+    }
+
+
+    .nav__right {
+        display: none;
     }
 
     .banner {
@@ -461,6 +485,15 @@ footer {
 
     .banner:before {
         background-position: 50%;
+    }
+
+    .banner__title {
+        font-size: 1.5rem;
+    }
+
+    .banner__button {
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
     }
 
     .project__card {
