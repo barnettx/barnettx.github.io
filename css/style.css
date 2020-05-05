@@ -9,7 +9,7 @@ html {
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
-    font-size: min(max(16px, 4vw), 22px);
+    /* font-size: min(max(16px, 4vw), 22px); */
 }
 
 h1,h2,h3,h4 {
@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     position: fixed;
     top:0;
@@ -77,7 +77,6 @@ body {
 .section {
     padding: 4rem 0;
     margin: 0 auto;
-    max-width: 1920px;
 }
 
 .container {
@@ -93,6 +92,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    margin: 0 auto;
 }
 
 .banner:before {
@@ -107,7 +107,7 @@ body {
     top: 0;
     z-index: -3;
     width: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     height: 100vh;
 }
 
@@ -188,7 +188,7 @@ body {
 }
 
 .contact__item:hover {
-    filter: brightness(90%);
+    filter: brightness(60%);
 }
 
 .contact__item:active {
@@ -301,6 +301,21 @@ footer {
     color: white;
 }
 
+/* desktop */
+@media (min-width: 992px) {
+    /* .banner {
+        max-width: 1920px;
+    } */
+
+    .banner {
+        max-width: 1920px;
+    }
+
+    .section {
+        max-width: 1920px;
+    }
+}
+
 /* mobile and tablet */
 @media (max-width: 992px) {
 
@@ -311,7 +326,7 @@ footer {
 
     .nav {
         justify-content: flex-start;
-        padding: 0 30px;
+        padding: .5rem 30px;
 
     }
 
@@ -328,6 +343,7 @@ footer {
     .nav__mobile__close{
         display: none;
     }
+
 
     .nav__right {
         display: none;
@@ -429,5 +445,26 @@ footer {
         text-align: center;
     }
 
+
+}
+
+/* mobile landscape */
+@media (max-width: 992px) and (orientation: landscape){
+    :root {
+        --nav-height: 3.5rem;
+    }
+
+    .banner {
+        background-color: rgba(200, 200, 200, 1);
+        z-index: -1;
+    }
+
+    .banner:before {
+        background-position: 50%;
+    }
+
+    .project__card {
+        width: 25%;
+    }
 
 }
