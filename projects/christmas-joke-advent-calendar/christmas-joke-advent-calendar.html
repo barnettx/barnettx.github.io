@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barnett Lee</title>
+</head>
+<body>
+    <nav class="nav">
+        
+        <div class="nav__mobile">
+            <i class="fas fa-bars nav__mobile__open" onclick="openMobileNav()"></i>
+            <i class="fas fa-times nav__mobile__close" onclick="closeMobileNav()"></i>
+        </div>
+        <a href="/index.html" class="nav__left">Barnett Lee</a>
+        <ul class="nav__right">
+            <li class="nav__right__item">
+                <a href="/index.html#home" class="nav__right__link">Home</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#about" class="nav__right__link">About</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#projects" class="nav__right__link">Projects</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#skills" class="nav__right__link">Skills</a>
+            </li>
+        </ul>
+
+        <div class="mobile__menu">
+            <ul>
+                <li>
+                    <a href="/index.html#home" onclick="closeMobileNav()">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html#about" onclick="closeMobileNav()">About</a>
+                </li>
+                <li>
+                    <a href="/index.html#projects" onclick="closeMobileNav()">Projects</a>
+                </li>
+                <li>
+                    <a href="/index.html#skills" onclick="closeMobileNav()">Skills</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <article>
+        <h1>Christmas Joke Advent Calendar</h1>
+        
+        <video controls autoplay muted>
+                <source src="vid/christmas-joke-advent-calendar-trailer.mp4" type="video/mp4">
+            </video>
+        <br>    
+        
+        <a href="https://play.google.com/store/apps/details?id=com.bean_studios.cjc2013">Download Christmas Joke Advent Calendar from the Play Store</a>
+        
+        <h2>Problem</h2>
+        Christmas Advent Calendars are bulky, making them difficult to bring along for Christmas Travels. They are also expensive - not everyone can afford them.
+
+        <h2>Solution</h2>
+        <img src="img/Picture1.png" alt="">
+        <img src="img/Picture2.png" alt="">
+        <img src="img/Picture3.png" alt="">
+        <img src="img/Picture4.png" alt="">
+        <img src="img/Picture5.png" alt="">
+        <img src="img/Picture6.png" alt="">
+        <img src="img/ChristmasJokeCalendarIllustrations.PNG" alt="">
+
+        <h2>Technologies</h2>
+        Cross Platform Application built using LibGDX. Former versions used Java in Native Android.
+        
+    </article>
+
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

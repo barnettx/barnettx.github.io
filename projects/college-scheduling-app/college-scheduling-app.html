@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Barnett Lee</title>
+</head>
+<body>
+    <nav class="nav">
+        
+        <div class="nav__mobile">
+            <i class="fas fa-bars nav__mobile__open" onclick="openMobileNav()"></i>
+            <i class="fas fa-times nav__mobile__close" onclick="closeMobileNav()"></i>
+        </div>
+        <a href="/index.html" class="nav__left">Barnett Lee</a>
+        <ul class="nav__right">
+            <li class="nav__right__item">
+                <a href="/index.html#home" class="nav__right__link">Home</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#about" class="nav__right__link">About</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#projects" class="nav__right__link">Projects</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#skills" class="nav__right__link">Skills</a>
+            </li>
+        </ul>
+
+        <div class="mobile__menu">
+            <ul>
+                <li>
+                    <a href="/index.html#home" onclick="closeMobileNav()">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html#about" onclick="closeMobileNav()">About</a>
+                </li>
+                <li>
+                    <a href="/index.html#projects" onclick="closeMobileNav()">Projects</a>
+                </li>
+                <li>
+                    <a href="/index.html#skills" onclick="closeMobileNav()">Skills</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <article>
+        <h1>College Scheduling App</h1>
+        <br>
+        
+        <video controls autoplay muted>
+                <source src="vid/GKS Trailer.mp4" type="video/mp4">
+            </video>
+        <br>    
+        
+        <h2>Problem</h2>
+        <p>
+            Colleges and Universities run multiple concurrent courses that share a limited set of resources.
+            Changes can regularly happen, resulting in a cascade of changes that are difficult to track.
+        </p>
+            <img class="image image__landscape"src="img/problem.png" alt="">
+        <p>
+            In this scenario, an external lecturer for “External Lecture A” can only arrive later on Tuesday. We might try to swap “Activity Group A” and “Activity Group B” with the aforementioned lecture but find that the venue needed for the activity is not available at an earlier time. Hence, a more complex three-way swap is required among a “Safety Brief” from Monday, “Activity Group A”, “Activity Group B” and “External Lecture.” These kinds of changes happen multiple times a week.
+        </p>
+        <p>
+            Existing scheduling solutions like Google Calendar struggle to track these changes. For example, staff may not realise that an event has been deleted because there is no notification system for this type of change.
+        </p>
+        <br>
+        <h2>Solution</h2>
+        <p>
+            A full stack mobile and web application enabling students and staff to stay updated of the latest course schedules. It combines the calendar interface like Google Calendar with a change tracking system like Git.
+        </p>
+
+        <img class="image image__portrait" src="img/scheduleScreen.png" alt="">
+        <p>
+            The Schedule Screen is where users spend the most time. Users view their course schedules. For staff managing schedules, they can easily view concurrent schedules side-by-side. This is easier than the typical overlapping layout in Google Calendar. Users also benefit from the upfront information of location, lecture title, lecture code, lecturer, etc.
+        </p>
+
+        <img class="image image__portrait" src="img/editScreen.png" alt="">
+            Staff are easily able to create, edit and delete events.
+
+        <img class="portrait-screenshot" src="img/notification screen.png" alt="">
+            The app detects edits made. Staff can add a comment explaining the change which will be useful for students later.
+        <img class="portrait-screenshot" src="img/notificationLockScreen.png" alt="">
+            Students and staff will receive push notifications regarding changes to course schedules, with useful information upfront.
+        <img class="portrait-screenshot" src="img/editsScreen.png" alt="">
+            To get further information about the changes, users access the Edits Screen. This a complete changelog for all schedules. Each entry explains whether there has a been a Create, Update or Delete (Particularly important as Google Calendar doesn't track deleted events), the modified event and the before and after values.
+        <img class="portrait-screenshot" src="img/changePane.png" alt="">
+            The Change List at the bottom of the Schedule Screen is a mini-version of the Edits Screen. Users can scroll through changes, clicking on any one to go to the event that has changed.
+        <img class="image-landscape" src="img/beforeAfter.png" alt="">
+            A before and after toggle enables users to visually understand how a schedule may have changed since they last checked.
+        
+        <h2>Technologies</h2>
+            ReactJS combined with Cordova to create a web and mobile application. Backend is built with Java and SQL.
+    </article>
+
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+img.banner {
+    box-shadow: 0 8px 12px rgba(50,50,93,.11), 0 2px 6px rgba(0,0,0,.08);
+}
+
+a {
+    color: rgb(30,30,30);
+}
+
+html,h1,h2,p {
+    color: #444444;
+}

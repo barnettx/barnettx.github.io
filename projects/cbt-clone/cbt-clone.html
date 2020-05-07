@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barnett Lee</title>
+</head>
+
+<body>
+    <nav class="nav">
+
+        <div class="nav__mobile">
+            <i class="fas fa-bars nav__mobile__open" onclick="openMobileNav()"></i>
+            <i class="fas fa-times nav__mobile__close" onclick="closeMobileNav()"></i>
+        </div>
+        <a href="/index.html" class="nav__left">Barnett Lee</a>
+        <ul class="nav__right">
+            <li class="nav__right__item">
+                <a href="/index.html#home" class="nav__right__link">Home</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#about" class="nav__right__link">About</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#projects" class="nav__right__link">Projects</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/index.html#skills" class="nav__right__link">Skills</a>
+            </li>
+        </ul>
+
+        <div class="mobile__menu">
+            <ul>
+                <li>
+                    <a href="/index.html#home" onclick="closeMobileNav()">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html#about" onclick="closeMobileNav()">About</a>
+                </li>
+                <li>
+                    <a href="/index.html#projects" onclick="closeMobileNav()">Projects</a>
+                </li>
+                <li>
+                    <a href="/index.html#skills" onclick="closeMobileNav()">Skills</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <article>
+        <h1>CBTClone</h1>
+
+        <img class="banner" src="img/banner.png" alt="">
+
+        <p>A web application I hacked together in 6 days for students to better prepare for the US ACT Standardised test
+        </p>
+        <a href="https://hungry-wilson-a32ea8.netlify.app/#">Access CBTClone</a>
+
+        <h2>Problem</h2>
+        For a student hoping to be admitted into US Universities, Standardised Testing is a key part of admissions.
+        Traditionally, the test is done on paper by shading a Optical Mark Recognition answer sheet.
+        <img src="img/testPaper.png" alt="">
+        <img src="img/OMRsheet.png" alt="">
+
+        However, for international students, a computer based test (CBT) is administered instead.
+        <img src="img/ACTPracticeCBT.png" alt="">
+        While the test content is the same, there are differences that put international students at a disadvantage
+        <img src="img/Papers.png" alt="">
+        There is only one Computer Based Test available for practice while there are 78 Paper Tests for practice. This
+        makes it difficult for students to assimilate to the differences.
+        <img src="img/CBTquirks.png" alt="">
+        Students aren’t used to the quirks of CBT.
+        <ul>
+            <li>
+                There is 2-5 second processing time moving between questions meaning you cannot scan questions instantly
+                like would you on paper. (2-5 seconds adds up on a paper with 52.5 seconds per question)
+            </li>
+            <li>
+                Highlights with the digital highlighter are destroyed when moving between questions. This makes the
+                strategy of reading a passage and highlighting key points infeasible.
+            </li>
+        </ul>
+
+        <p>
+            These differences made it harder for international students to score the perfect scores needed for US
+            admission.
+        </p>
+
+        <img src="img/validatingProblem.png" alt="">
+        Realising this issue, I discussed with students to validate my hypothesis. This sparked interest to develop a
+        CBT Emulator so that we could load in more practice tests.
+
+        <br>
+        <h2>Solution</h2>
+        <img src="img/banner.png" alt="">
+        CBTClone was built in just 6 days to help students better prep for the test. It clones many of the quirks of the official CBT test, including processing time, shortcut keys and highlighter behaviour.
+        <img src="img/CBTLoadPaper.png" alt="">
+        Importantly, the reverse engineered emulator allows users to load in more practice tests. This was done by using OCR to convert existing paper tests into digital versions which could be loaded into the CBT.
+        <img src="img/GoogleDocs.png" alt="">
+        To increase the number of converted tests, I crowdsourced the conversion, using Google Drive as a sharing space for digital versions of the test.
+        <img src="img/CBTCloneOutcome.png" alt="">
+        <a href="https://www.reddit.com/r/ACT/comments/czhirh/more_cbt_reading_practices/">Posting to Reddit communities</a>, I received enthusiastic responses from students who wanted to contribute.
+        <img src="img/CBTCloneOutreach.png" alt="">
+        The app has been used by hundreds of students across the world applying to the US.
+
+        <h2>Technologies</h2>
+        HTML, CSS, Javascript. Used tinyMCE as the text editor. Deployed on netlify
+    </article>
+
+    <script src="/js/navbar.js"></script>
+</body>
+
+</html>
