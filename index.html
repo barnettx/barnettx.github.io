@@ -6,10 +6,23 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#2C3E50">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149875199-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149875199-2');
+</script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -22,32 +35,38 @@
         <a href="/index.html" class="nav__left">Barnett Lee</a>
         <ul class="nav__right">
             <li class="nav__right__item">
-                <a href="#home" class="nav__right__link">Home</a>
+                <a href="/index.html#home" class="nav__right__link">Home</a>
             </li>
             <li class="nav__right__item">
-                <a href="#about" class="nav__right__link">About</a>
+                <a href="/index.html#about" class="nav__right__link">About</a>
             </li>
             <li class="nav__right__item">
-                <a href="#projects" class="nav__right__link">Projects</a>
+                <a href="/index.html#projects" class="nav__right__link">Projects</a>
             </li>
             <li class="nav__right__item">
-                <a href="#skills" class="nav__right__link">Skills</a>
+                <a href="/index.html#skills" class="nav__right__link">Skills</a>
+            </li>
+            <li class="nav__right__item">
+                <a href="/blog/index.html" class="nav__right__link">Blog</a>
             </li>
         </ul>
 
         <div class="mobile__menu">
             <ul>
                 <li>
-                    <a href="#home" onclick="closeMobileNav()">Home</a>
+                    <a href="/index.html#home" onclick="closeMobileNav()">Home</a>
                 </li>
                 <li>
-                    <a href="#about" onclick="closeMobileNav()">About</a>
+                    <a href="/index.html#about" onclick="closeMobileNav()">About</a>
                 </li>
                 <li>
-                    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+                    <a href="/index.html#projects" onclick="closeMobileNav()">Projects</a>
                 </li>
                 <li>
-                    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+                    <a href="/index.html#skills" onclick="closeMobileNav()">Skills</a>
+                </li>
+                <li>
+                    <a href="/blog/index.html" class="nav__right__link">Blog</a>
                 </li>
             </ul>
         </div>

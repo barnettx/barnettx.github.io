@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-top: 80px;
+}
+
+article {
+    padding: .5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
