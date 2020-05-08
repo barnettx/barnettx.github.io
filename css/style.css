@@ -62,9 +62,9 @@ body {
 .banner:before {
     position: absolute;
     content: '';
-    background-image: url("../img/Banner-Big.jpg");
-    /* background-image: url("../img/Banner.jpg"); */
-    background-image: url("../img/Banner-4K.jpg");
+    /* background-image: url("../img/Banner-Big.jpg"); */
+    background-image: url("../img/Banner.jpg");
+    /* background-image: url("../img/Banner-4K.jpg"); */
 
     background-size: auto 100%;
     background-repeat: no-repeat;
